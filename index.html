@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content row">
+      <div class="header-balance">
+        <h1>My balance</h1>
+        <p>$921.48</p>
+      </div>
+      <div class="header-logo">
+        <img src = "images/logo.svg" alt="logo"/>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container main-content">
+      <h2>Spending - Last 7 days</h2>
+      <div class="weekly_graph row">
+        <div class="bar">
+          <div class="spending_bar--active decimal active_mon" id="mon_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_mon" id="mon_active_no_dec">$42</div>
+          <div class="spending_bar mon" id="mon"></div>
+          <p>mon</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_tue" id="tue_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_tue" id="tue_active_no_dec">$42</div>
+          <div class="spending_bar tue" id="tue"></div>
+          <p>tue</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_wed" id="wed_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_wed" id="wed_active_no_dec">$42</div>
+          <div class="spending_bar wed" id="wed"></div>
+          <p>wed</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_thu" id="thu_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_thu" id="thu_active_no_dec">$42</div>
+          <div class="spending_bar thu" id="thu"></div>
+          <p>thu</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_fri" id="fri_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_fri" id="fri_active_no_dec">$42</div>
+          <div class="spending_bar fri" id="fri"></div>
+          <p>fri</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_sat" id="sat_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_sat" id="sat_active_no_dec">$42</div>
+          <div class="spending_bar sat" id="sat"></div>
+          <p>sat</p>
+        </div>
+
+        <div class="bar">
+          <div class="spending_bar--active decimal active_sun" id="sun_active_dec">$42.36</div>
+          <div class="spending_bar--active no_decimal active_sun" id="sun_active_no_dec">$42</div>
+          <div class="spending_bar sun" id="sun"></div>
+          <p>sun</p>
+        </div>
+      </div>
+      <hr>
+      <div class="monthly_breakdown">
+        <h3>Total this month</h3>
+        <div class="monthly_spending row">
+          <p class="monthly_total">$478.33</p>
+
+          <div class="percentage_increase">
+            <p class="monthly_percent">+2.4%</p>
+            <p class="percentage_increase--desc">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/CharlieRonchetti">Charlie Ronchetti</a>.
+  </div>
+
+  <script src="client.js"></script>
+  <script type="module" src="graph.js"></script>
+</body>
+
+</html>

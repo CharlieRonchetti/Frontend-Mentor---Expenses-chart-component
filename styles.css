@@ -1,0 +1,268 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 4rem;
+    padding: 0;
+    background-color: hsl(33, 100%, 98%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border-color: hsl(27, 66%, 92%);
+    border: 1px solid hsl(27, 66%, 92%);
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    padding: 2rem 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.header-content {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-balance h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 0.2rem;
+}
+
+.header-balance p {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.main-content h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(25, 47%, 15%);
+    letter-spacing: 0.1rem;
+}
+
+.weekly_graph {
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 25rem;
+    padding: 2rem 0;
+}
+
+.header-balance {
+    color: white;
+}
+
+.monthly_breakdown {
+    margin-top: 2rem;
+}
+
+.monthly_spending {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.percentage_increase {
+    text-align: right;
+}
+
+.monthly_breakdown h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: hsl(28, 10%, 53%);
+}
+
+.monthly_total {
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(25, 47%, 15%);
+}
+
+.percentage_increase--desc {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: hsl(28, 10%, 53%);
+}
+
+.monthly_percent {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: hsl(25, 47%, 15%);
+}
+
+.bar {
+    width: 100%;
+    min-width: 2.2rem;
+    text-align: center;
+}
+
+.spending_bar {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.spending_bar:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+}
+
+.decimal {
+    display: none;
+}
+
+.no_decimal {
+    display: none;
+}
+
+.spending_bar--active {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+}
+
+.today {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.bar p {
+    color:hsl(28, 10%, 53%);
+    font-weight: 400;
+    height: 100%;
+}
+
+.mon {
+    height: 7rem;
+}
+
+.tue {
+    height: 12rem;
+}
+
+.wed {
+    height: 18rem;
+}
+
+.thu {
+    height: 11rem;
+}
+
+.fri {
+    height: 4rem;
+}
+
+.sat {
+    height: 8rem;
+}
+
+.sun {
+    height: 16rem;
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 90%;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .header-balance h1 {
+        font-size: 1rem;
+    }
+    
+    .header-balance p {
+        font-size: 1.75rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.25rem;
+        letter-spacing: 0rem;
+    }
+
+    .monthly_breakdown h3 {
+        font-size: 1rem;
+    }
+    
+    .monthly_total {
+        font-size: 2rem;
+    }
+    
+    .percentage_increase--desc {
+        font-size: 1rem;
+    }
+    
+    .monthly_percent {
+        font-size: 1rem;
+    }
+
+    .weekly_graph {
+        gap: 0.2rem;
+    }
+  }
+
+@media (max-width: 675px) {
+    .main-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .decimal {
+        display: none;
+    }
+    
+    .no_decimal {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .spending_bar--active {
+        font-size: 0.75rem;
+    }
+}
